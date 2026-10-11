@@ -178,8 +178,10 @@ streamlit run app/app.py
 
 # 👩‍💻 Author
 
-**Neeta Sharma**
+**Neeta Sharma(leader)**
+
 **Tanvi Thorat**
+
 **Omkar Mate**
 
 B.Sc. Data Science & Big Data Analytics (T.Y 6th sem project)
