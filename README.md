@@ -1,53 +1,75 @@
 # 🚦 Urban Traffic Congestion Prediction Dashboard
 
-<div align="center">
+<p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-black?style=for-the-badge&logo=pandas)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive-blueviolet?style=for-the-badge&logo=plotly)
 
-### 🚀 Interactive Machine Learning Dashboard for Urban Traffic Congestion Analysis
+</p>
 
-### 🌐 Live Demo
+<h2 align="center">
+🚀 Interactive Machine Learning Dashboard for Urban Traffic Congestion Analysis
+</h2>
+
+<p align="center">
+
+### 🌐 **Live Demo**
 
 **https://traffic-congestion-dashboard-neeta-group.streamlit.app**
 
-</div>
+</p>
+
+---
+
+# 📸 Dashboard Preview
+
+<p align="center">
+
+![Dashboard](images/dashboard.png)
+
+</p>
 
 ---
 
 # 📖 Project Overview
 
-Urban traffic congestion has become one of the biggest challenges faced by modern cities. Heavy traffic leads to increased travel time, fuel consumption, air pollution, and road accidents.
+Urban traffic congestion affects travel time, fuel consumption, pollution, and road safety. Understanding traffic patterns can help city planners and transportation authorities make informed decisions.
 
-This project uses Machine Learning and Data Analytics to analyze urban traffic patterns and predict average traffic speed using multiple traffic-related factors.
+This project applies **Machine Learning** and **Data Analytics** to analyze urban traffic data and predict **Average Traffic Speed** using multiple traffic-related features.
 
-The project also includes an interactive Streamlit dashboard that allows users to explore traffic data through filters, visualizations, and predictive analytics.
+The project also includes an **interactive Streamlit dashboard** that enables users to explore traffic trends, visualize patterns, and generate predictions in real time.
 
 ---
 
 # 🎯 Objectives
 
-- Analyze urban traffic congestion patterns.
-- Perform Exploratory Data Analysis (EDA).
-- Identify relationships between traffic-related variables.
-- Build Machine Learning models for prediction.
-- Develop an interactive dashboard for traffic analysis.
-- Provide useful traffic insights for decision making.
+- Analyze urban traffic congestion patterns
+- Perform Exploratory Data Analysis (EDA)
+- Understand relationships between traffic variables
+- Build regression models for traffic speed prediction
+- Compare Linear Regression and Random Forest
+- Develop an interactive dashboard for data exploration
 
 ---
 
 # 📊 Dataset
 
-The dataset contains **300 traffic records** collected across **30 cities** between **2015–2024**.
+| Property | Value |
+|-----------|------|
+| Records | **300** |
+| Cities | **30** |
+| Years | **2015–2024** |
+| Features | **9** |
 
 ### Dataset Features
 
 - City
 - Year
 - Average Daily Traffic Volume
-- Average Traffic Speed
+- Average Traffic Speed *(Target Variable)*
 - Peak Hour Volume
 - Road Accidents
 - Air Quality Index (AQI)
@@ -56,41 +78,52 @@ The dataset contains **300 traffic records** collected across **30 cities** betw
 
 ---
 
-# ⚙️ Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Streamlit
-- Plotly
 - Matplotlib
 - Seaborn
+- Plotly
+- Streamlit
 - Scikit-Learn
 - Random Forest Regressor
 - Linear Regression
 
 ---
 
-# 🤖 Machine Learning Workflow
+# 🤖 Machine Learning Pipeline
 
-```
-Data Collection
-       ↓
+```text
+Traffic Dataset
+      │
+      ▼
 Data Cleaning
-       ↓
+      │
+      ▼
 Exploratory Data Analysis
-       ↓
+      │
+      ▼
 Feature Engineering
-       ↓
+      │
+      ▼
 Train-Test Split
-       ↓
+      │
+      ▼
 Model Training
-       ↓
+      │
+      ├── Linear Regression
+      └── Random Forest
+      │
+      ▼
 Model Evaluation
-       ↓
-Traffic Prediction
-       ↓
-Interactive Dashboard
+      │
+      ▼
+Traffic Speed Prediction
+      │
+      ▼
+Interactive Streamlit Dashboard
 ```
 
 ---
@@ -100,26 +133,28 @@ Interactive Dashboard
 - 📊 Interactive Dashboard
 - 🌍 City-wise Analysis
 - 📅 Year-wise Filtering
-- 📈 Traffic Trend Visualization
+- 📈 Interactive Plotly Charts
 - 🔥 Correlation Heatmap
 - 📉 Distribution Analysis
 - 🚗 Traffic Speed Prediction
+- 📌 KPI Cards
 - 💡 Smart Insights
-- 📌 Key Performance Metrics
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 Traffic_Congestion_Prediction/
 
-│
 ├── app/
 │   └── app.py
 │
 ├── data/
 │   └── Urban_Traffic_Data.xlsx
+│
+├── images/
+│   └── dashboard.png
 │
 ├── notebook/
 │   └── Traffic_Congestion_Prediction.ipynb
@@ -142,13 +177,19 @@ Clone the repository
 git clone https://github.com/neeta-05/neeta-05-Traffic-Congestion-Prediction-ML.git
 ```
 
+Move into the project directory
+
+```bash
+cd neeta-05-Traffic-Congestion-Prediction-ML
+```
+
 Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application
+Run the application
 
 ```bash
 streamlit run app/app.py
@@ -156,40 +197,43 @@ streamlit run app/app.py
 
 ---
 
-# 📈 Dashboard Preview
+# 💻 Live Demo
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0af01e7b-f285-4b3f-9af6-ee32c70e5cd6" />
+Launch the deployed application:
 
-
+**https://traffic-congestion-dashboard-neeta-group.streamlit.app**
 
 ---
 
 # 🔮 Future Improvements
 
-- Real-time Traffic API Integration
+- Real-time Traffic APIs
 - Weather Data Integration
-- Google Maps Visualization
-- Deep Learning Models (LSTM)
+- Google Maps Integration
 - Time Series Forecasting
+- LSTM-based Prediction
+- Cloud Database Support
+- User Authentication
 - Traffic Congestion Alerts
-- Cloud Deployment with CI/CD
 
 ---
 
-# 👩‍💻 Author
+# 👥 Team
 
-**Neeta Sharma(leader)**
+**Project Leader**
 
-**Tanvi Thorat**
+- Neeta Sharma
 
-**Omkar Mate**
+**Team Members**
 
-B.Sc. Data Science & Big Data Analytics (T.Y 6th sem project)
+- Tanvi Thorat
+- Omkar Mate
+
+**Course**
+
+B.Sc. Data Science & Big Data Analytics (Third Year – Semester VI)
 
 MIT World Peace University
 
-GitHub: https://github.com/neeta-05
-
 ---
-
 
