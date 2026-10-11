@@ -26,11 +26,7 @@
 
 # 📸 Dashboard Preview
 
-<p align="center">
-
-![Dashboard](images/dashboard.png)
-
-</p>
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/32badab4-930d-43f0-ac36-bef016046c10" />
 
 ---
 
