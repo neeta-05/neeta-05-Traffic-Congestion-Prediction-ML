@@ -149,9 +149,6 @@ Traffic_Congestion_Prediction/
 ├── data/
 │   └── Urban_Traffic_Data.xlsx
 │
-├── images/
-│   └── dashboard.png
-│
 ├── notebook/
 │   └── Traffic_Congestion_Prediction.ipynb
 │
