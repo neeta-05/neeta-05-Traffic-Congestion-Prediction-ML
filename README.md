@@ -158,7 +158,8 @@ streamlit run app/app.py
 
 # 📈 Dashboard Preview
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b5927852-6f2f-4975-a39d-08312819b53b" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0af01e7b-f285-4b3f-9af6-ee32c70e5cd6" />
+
 
 
 ---
