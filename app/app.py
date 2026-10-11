@@ -206,23 +206,31 @@ st.markdown("""
 # ─────────────────────────────────────────────
 # DATA LOADING
 # ─────────────────────────────────────────────
+import os
+
 @st.cache_data
 def load_data():
-    """Load dataset from local path or fallback."""
-    paths = [
-        r"C:\Users\DELL\Downloads\Urban_Traffic_Data.xlsx",
-        "Urban_Traffic_Data.xlsx",
-        "/mnt/user-data/uploads/Urban_Traffic_Data.xlsx",
-    ]
-    for p in paths:
-        try:
-            df = pd.read_excel(p)
-            return df
-        except Exception:
-            continue
-    st.error("❌ Could not find 'Urban_Traffic_Data.xlsx'. Place it in the same folder as app.py or adjust the file path.")
-    st.stop()
+    """
+    Load the traffic dataset from the project's data folder.
+    """
 
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    DATA_PATH = os.path.join(
+        BASE_DIR,
+        "..",
+        "data",
+        "Urban_Traffic_Data.xlsx"
+    )
+
+    try:
+        df = pd.read_excel(DATA_PATH)
+        return df
+
+    except FileNotFoundError:
+        st.error("❌ Dataset not found!")
+        st.info("Please make sure 'Urban_Traffic_Data.xlsx' is inside the data folder.")
+        st.stop()
 
 # Traffic category based on Average_Traffic_Speed_kmh
 def categorize_traffic(speed):
